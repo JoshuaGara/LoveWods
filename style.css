@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container-text {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18%;
+}
+
+.primary-text {
+  display: block;
+  color: #fff;
+  letter-spacing: 12px;
+  font-size: 50px;
+  font-family: "fasthand";
+
+  animation-name: gerakMasuk;
+  animation-duration: 9s;
+}
+
+.secondary-text {
+  display: block;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-family: "fasthand";
+
+  animation-name: gerakMasuk2;
+  animation-duration: 9s;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.copyright {
+  margin-top: 15%;
+  color: #ffc0cb;
+}
+
+@keyframes gerakMasuk {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+    color: #ffc0cb;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+
+  80% {
+    transform: translateX(100px);
+    letter-spacing: 2px;
+    color: #ffc0cb;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes gerakMasuk2 {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(-100px);
+    color: #ffc0cb;
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(80px);
+    color: #ffc0cb;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .container-text {
+    margin-top: 40%;
+  }
+
+  .copyright {
+    margin-top: 40%;
+  }
+}
+
+@media (max-width: 450px) {
+  .container-text {
+    margin-top: 40%;
+  }
+
+  .copyright {
+    margin-top: 40%;
+  }
+}
